@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document and QR Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web-based Scanner</h1>
+        <div class="scanner">
+            <h3>Scan QR/Barcode</h3>
+            <video id="qr-video" class="video-preview"></video>
+            <p>Scanned Data: <span id="scanned-data"></span></p>
+        </div>
+        <div class="uploader">
+            <h3>Upload Document for Scanning</h3>
+            <input type="file" id="file-input" accept="image/*">
+            <p>Extracted Text: <span id="extracted-text"></span></p>
+        </div>
+        <div class="export-buttons">
+            <button id="export-csv">Export to CSV</button>
+            <button id="export-excel">Export to Excel</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
